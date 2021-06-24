@@ -4,7 +4,7 @@ import './Chrono.css';
 class Chrono extends React.Component {
     
     state={
-        count:5,
+        count:0,
         stopstart: "START",
         
     }
@@ -27,6 +27,7 @@ class Chrono extends React.Component {
             count:0
         })
         clearInterval(this.Interval)
+        this.setState({stopstart : "START"})
     }
    
     
